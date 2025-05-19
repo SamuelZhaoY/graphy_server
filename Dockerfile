@@ -1,4 +1,4 @@
-FROM node:18.20.8-bookworm-slim
+FROM cgr.dev/chainguard/node:latest
 # 使用 apt 升级 shadow 包到安全版本
 RUN apt-get update && \
     apt-get install --only-upgrade -y passwd login && \
